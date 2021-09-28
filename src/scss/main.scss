@@ -1,0 +1,47 @@
+@import "~swiper/swiper-bundle.min.css";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_containers.scss";
+@import "~bootstrap/scss/reboot";
+
+$color_btn: #C9453B;
+$white: #ffffff;
+
+@mixin font_title ($fz, $clr, $lh) {
+  font-family: Gelasio, sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $lh;
+}
+
+@mixin font_text ($fz, $clr, $lh) {
+  font-family: "Roboto", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $lh;
+}
+
+@mixin font_logo ($fz, $clr, $lh) {
+  font-family: "Ribeye", sans-serif;
+  font-size: $fz;
+  color: $clr;
+  line-height: $lh;
+}
+
+@mixin btn_style ($width, $height) {
+  width: $width;
+  height: $height;
+  background: $color_btn;
+  color: $white;
+  text-align: center;
+  @include font_text(16px, $white, 24px);
+  border-style: none;
+  border-radius: 5px;
+}
+@import "fonts";
+@import "header";
+@import "footer";
+@import "about";
+@import "location";
+@import "blog";
